@@ -1,23 +1,30 @@
 {
   "name": "wsdl-discovery-tool",
-  "version": "1.0.0",
-  "description": "A powerful tool to discover WSDL endpoints from user-provided domains",
+  "version": "2.0.0",
+  "description": "The most powerful WSDL endpoint discovery tool with advanced scanning capabilities",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "power": "node index.js --power"
   },
   "keywords": [
     "wsdl",
     "soap",
     "web-services",
     "endpoint-discovery",
-    "domain-scanner"
+    "domain-scanner",
+    "subdomain-scanner",
+    "port-scanner",
+    "security-scanner"
   ],
   "author": "",
   "license": "MIT",
   "dependencies": {
     "axios": "^1.12.0",
     "cheerio": "^1.0.0-rc.12",
-    "xml2js": "^0.6.2"
+    "xml2js": "^0.6.2",
+    "p-limit": "^3.1.0",
+    "cli-progress": "^3.12.0",
+    "chalk": "^4.1.2"
   }
 }
