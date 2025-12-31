@@ -50,6 +50,8 @@ const CONFIG = {
 
 class WSDLDiscovery {
   constructor(domain) {
+    // Remove protocol (http:// or https://), www prefix, and any path components
+    // Example: https://www.example.com/path -> example.com
     this.domain = domain.replace(/^(https?:\/\/)?(www\.)?/, '').split('/')[0];
     this.baseUrl = `https://${this.domain}`;
     this.httpBaseUrl = `http://${this.domain}`;
@@ -137,6 +139,7 @@ class WSDLDiscovery {
 
       return services;
     } catch (error) {
+      // WSDL parsing failed - structure might be non-standard or incomplete
       return [];
     }
   }
@@ -298,13 +301,16 @@ class WSDLDiscovery {
           $('a[href]').each((i, elem) => {
             const href = $(elem).attr('href');
             if (href && (href.includes('.wsdl') || href.includes('?wsdl'))) {
-              // Handle relative URLs
+              // Handle relative and absolute URLs properly
               let fullUrl = href;
               if (href.startsWith('/')) {
+                // Absolute path: /path/to/service?wsdl
                 fullUrl = `${this.baseUrl}${href}`;
               } else if (!href.startsWith('http')) {
+                // Relative path: path/to/service?wsdl
                 fullUrl = `${this.baseUrl}/${href}`;
               }
+              // href already starts with http:// or https:// - use as is
               links.push(fullUrl);
             }
           });
