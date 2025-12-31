@@ -829,8 +829,9 @@ async function main() {
           if (result.services.length > 0) {
             result.services.forEach(svc => {
               console.log(chalk.yellow(`   📦 Service: ${svc.name}`));
-              if (svc.operations.length > 0) {
-                console.log(chalk.gray(`   🔧 Operations: ${svc.operations.map(o => o.name).slice(0, 5).join(', ')}${svc.operations.length > 5 ? '...' : ''}`));
+              if (svc.operations && svc.operations.length > 0) {
+                const opNames = svc.operations.map(o => o && o.name ? o.name : 'Unknown').slice(0, 5).join(', ');
+                console.log(chalk.gray(`   🔧 Operations: ${opNames}${svc.operations.length > 5 ? '...' : ''}`));
               }
             });
           }
