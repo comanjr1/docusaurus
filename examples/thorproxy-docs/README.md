@@ -1,6 +1,10 @@
 # ThorProxy Documentation Example
 
-This is an example Docusaurus site that demonstrates how to create comprehensive documentation for a residential proxy service like ThorProxy.
+This is an example Docusaurus site that demonstrates how to create comprehensive documentation for a residential proxy service like ThorProxy, powered by [ThorData.com](https://www.thordata.com/).
+
+## About ThorData
+
+[ThorData.com](https://www.thordata.com/) is a residential proxy service provider offering high-quality IP addresses from real residential users worldwide. This example site demonstrates how to document such a service using Docusaurus.
 
 ## Features
 

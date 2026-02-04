@@ -4,11 +4,11 @@ sidebar_position: 1
 
 # Introduction to ThorProxy
 
-Welcome to **ThorProxy** - a powerful residential proxy network that provides authentic IP addresses from real home users around the world.
+Welcome to **ThorProxy** - a powerful residential proxy network powered by [ThorData.com](https://www.thordata.com/) that provides authentic IP addresses from real home users around the world.
 
 ## What is ThorProxy?
 
-ThorProxy is a residential proxy service that uses **real IP addresses** from home users' devices, provided by Internet Service Providers (ISP) such as:
+ThorProxy is ThorData's residential proxy service that uses **real IP addresses** from home users' devices, provided by Internet Service Providers (ISP) such as:
 
 ### Indonesian ISPs
 - 🇮🇩 Telkomsel
@@ -85,4 +85,16 @@ ThorProxy is ideal for:
 
 ## Getting Started
 
-Ready to start using ThorProxy? Check out our [Getting Started Guide](/docs/configuration/getting-started) to set up your first proxy connection.
+Ready to start using ThorProxy? 
+
+1. **Sign up**: Create an account at [ThorData.com](https://www.thordata.com/)
+2. **Get credentials**: Obtain your API credentials from the ThorData dashboard
+3. **Configure**: Check out our [Getting Started Guide](/docs/configuration/getting-started) to set up your first proxy connection
+
+## Learn More
+
+Visit [ThorData.com](https://www.thordata.com/) to:
+- Sign up for an account
+- View pricing and plans
+- Access your dashboard
+- Get support and documentation

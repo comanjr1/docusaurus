@@ -51,7 +51,7 @@ export default function Home() {
   return (
     <Layout
       title={`Home`}
-      description="ThorProxy - Residential Proxy Network for Web Scraping, Market Research & More">
+      description="ThorProxy - Powered by ThorData.com - Residential Proxy Network for Web Scraping, Market Research & More">
       <HomepageHeader />
       <main>
         <section className={styles.features}>
@@ -115,11 +115,21 @@ export default function Home() {
             <div className={styles.ctaContent}>
               <Heading as="h2">Ready to Get Started?</Heading>
               <p>Login to access your proxy dashboard and view all available proxies with complete details.</p>
-              <Link
-                className="button button--primary button--lg"
-                to="/login">
-                Access Dashboard Now →
-              </Link>
+              <p><strong>Powered by <a href="https://www.thordata.com/" target="_blank" rel="noopener noreferrer">ThorData.com</a></strong></p>
+              <div style={{display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap'}}>
+                <Link
+                  className="button button--primary button--lg"
+                  to="/login">
+                  Access Dashboard Now →
+                </Link>
+                <a
+                  className="button button--secondary button--lg"
+                  href="https://www.thordata.com/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Visit ThorData.com
+                </a>
+              </div>
             </div>
           </div>
         </section>

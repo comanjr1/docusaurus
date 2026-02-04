@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'ThorProxy Documentation',
-  tagline: 'Residential Proxy Network for Web Scraping, Market Research & More',
+  tagline: 'Powered by ThorData.com - Residential Proxy Network for Web Scraping, Market Research & More',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here

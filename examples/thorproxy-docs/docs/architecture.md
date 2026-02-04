@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Technical Architecture
 
-Understanding how ThorProxy works under the hood will help you make the most of its capabilities.
+Understanding how ThorProxy (powered by [ThorData.com](https://www.thordata.com/)) works under the hood will help you make the most of its capabilities.
 
 ## System Architecture
 
