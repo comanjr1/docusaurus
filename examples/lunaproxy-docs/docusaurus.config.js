@@ -116,7 +116,7 @@ const config = {
               },
               {
                 label: 'Use Cases',
-                to: '/docs/category/use-cases',
+                to: '/docs/use-cases/web-scraping',
               },
             ],
           },

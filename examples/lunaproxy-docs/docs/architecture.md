@@ -261,4 +261,4 @@ Response:
 Learn how to implement LunaProxy in your applications:
 - [Configuration Guide](/docs/configuration/getting-started)
 - [Code Examples](/docs/examples/python)
-- [Use Cases](/docs/category/use-cases)
+- [Use Cases](/docs/use-cases/web-scraping)
