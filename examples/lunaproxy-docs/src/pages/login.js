@@ -5,7 +5,6 @@ import styles from './login.module.css';
 export default function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -13,7 +12,6 @@ export default function Login() {
     if (username && password) {
       localStorage.setItem('lunaproxy_user', username);
       localStorage.setItem('lunaproxy_auth', 'true');
-      setIsLoggedIn(true);
       // Redirect to dashboard
       window.location.href = '/proxy-dashboard';
     }
